@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+  --mainColor:#999;
+}
+header ,#body , #displayTable{
+  border-bottom: #999 solid 1px;
+}
+header h1 , #footer{
+ color: #AAA;
+}
+#bmBody {
+  background-color: #eee;
+}
+
+#submitBtn , #visitBtn{
+  background-color: #1167c4;
+  color: white;
+  border: 1px solid #1167c4;
+  outline: none;
+  padding: 0.70rem 1rem;
+  border-radius: 5px;
+}
+#deleteBtn{
+  background-color: #910004;
+    color: white;
+    border: 1px solid #910004;
+    outline: none;
+  padding: 0.70rem;
+  border-radius: 5px;
+}
+#displayTable tr{
+background: linear-gradient(#eee, #fff);
+
+}
+
+#body p{
+  background-color: rgb(240, 128, 128 , 50%) ;
+  border: none;
+}
+#body input{
+  border: 1px solid #DDD;
+}
+
+#visitBtn:hover{
+  background-color: #0a3f77;
+    border: 1px solid #0a3f77;
+}
+#deleteBtn:hover{
+  background-color: #510d0e;
+    border: 1px solid #510d0e;
+}
+button:hover{
+  box-shadow: 2px 5px 3px 0px #888;
+
+}

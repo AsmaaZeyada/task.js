@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bookmark</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/js-assignment-3-style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="my-2 py-5 ">
+      <h1 class="fw-bolder">Bookmarker</h1>
+    </header>
+    <!-- ====================================== -->
+    <section id="body" class="text-center my-3 py-3">
+      <div id="bmBody" class="py-4 ">
+        <h3 class="py-3 fw-bolder">Bookmark your favorite sites</h3>
+
+        <ul class="list-unstyled">
+
+          <li class=" my-2 py-2 fw-bold fs-5">Site Name </li>
+          <input id="markName" type="text" oninput="validateName(this.value)" class="w-75 py-1 rounded-3 " required placeholder="Bookmark Name">
+          <p id="msgName" class="w-75 mx-auto my-1  text-danger "></p>
+          
+          <li class=" my-2 py-2 fw-bold fs-5">Site URL</li>
+          <input id="webUrl" type="url" oninput="validateUrl(this.value)" class="rounded-3 w-75 py-1" required placeholder="website URL">
+          <p id="msgUrl" class="w-75 mx-auto my-1  text-danger "></p>
+       
+        </ul>
+        <button id="submitBtn" type="submit" onclick="addMark(this.value)" >Submit</button>
+      </div>
+    </section>
+    <!-- ========================================== -->
+    <section id="displayTable" class="my-2 py-2">
+      <table class=" w-100">
+       
+        <tbody id="tBody">
+          
+        
+        </tbody>
+      </table>
+    </section>
+    <!-- ===================================== -->
+
+    <footer id="footer" class="my-3 py-3 fw-bold fs-6">
+      <p>© 2019 Bookmarker Inc.</p>
+    </footer>
+  </div>
+
+  <script src="js/js-assignment-3-script.js"></script>
+</body>
+
+</html>
